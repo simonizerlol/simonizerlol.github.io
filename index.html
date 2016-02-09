@@ -166,16 +166,25 @@ When I became 16, I applied my first <a href="http://www.myexplore.ca/en/">Explo
                                 <form class="contact-form">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Name</label>
-                                            <input class="form-control" placeholder="Name">
+                                            <label>First Name</label>
+                                            <input class="form-control" name="first_name" maxlength="50" size="30" placeholder="First Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Last Name</label>
+                                            <input class="form-control" name="last_name" maxlength="50" size="30"placeholder="Last Name">
                                         </div>
                                         <div class="col-md-6">
                                             <label>Email</label>
-                                            <input class="form-control" placeholder="Email">
+                                            <input class="form-control" name="email" maxlength="80" size="30" placeholder="Email">
                                         </div>
+                                        <div class="col-md-6">
+                                            <label>Telephone</label>
+                                            <input class="form-control" name="telephone" maxlength="30" size="30" placeholder="Telephone(not required)">
+                                        </div>
+                                        
                                     </div>
                                     <label>Message</label>
-                                    <textarea class="form-control" rows="4" placeholder="Tell me your thoughts and feelings..."></textarea>
+                                    <textarea class="form-control" name="message" maxlength="1000" cols="25" rows="4" placeholder="Tell me your thoughts and feelings..."></textarea>
                                     <div class="row">
                                         <div class="col-md-4 col-md-offset-4">
                                             <button class="btn btn-danger btn-block btn-lg btn-fill">Send Message</button>

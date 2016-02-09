@@ -6,9 +6,9 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "you@yourdomain.com";
+    $email_to = "simonizerlol@gmail.com";
  
-    $email_subject = "Your email subject line";
+    $email_subject = "From simonykhsu.com";
  
      
  
@@ -18,7 +18,7 @@ if(isset($_POST['email'])) {
  
         // your error code can go here
  
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "I am very sorry, but there were error(s) found with the form you submitted. ";
  
         echo "These errors appear below.<br /><br />";
  
@@ -42,9 +42,9 @@ if(isset($_POST['email'])) {
  
         !isset($_POST['telephone']) ||
  
-        !isset($_POST['comments'])) {
+        !isset($_POST['message'])) {
  
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+        died('I am sorry, but there appears to be a problem with the form you submitted.');       
  
     }
  
@@ -58,7 +58,7 @@ if(isset($_POST['email'])) {
  
     $telephone = $_POST['telephone']; // not required
  
-    $comments = $_POST['comments']; // required
+    $comments = $_POST['message']; // required
  
      
  
@@ -88,7 +88,7 @@ if(isset($_POST['email'])) {
  
   if(strlen($comments) < 2) {
  
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'The message you entered do not appear to be valid.<br />';
  
   }
  
@@ -120,7 +120,7 @@ if(isset($_POST['email'])) {
  
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
  
-    $email_message .= "Comments: ".clean_string($comments)."\n";
+    $email_message .= "Message: ".clean_string($comments)."\n";
  
      
  
@@ -144,7 +144,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  
  
-Thank you for contacting us. We will be in touch with you very soon.
+Thank you for contacting me. I will be in touch with you very soon.
  
  
  
