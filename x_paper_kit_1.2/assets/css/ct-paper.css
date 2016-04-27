@@ -3038,3 +3038,163 @@ textarea.form-control {
 .datepicker-months thead {
   padding: 0 0 3px;
   display: block; }
+
+/*CSS Animation 101 by Airen from codeopen.io*/
+body {
+  background: #22BDA0;
+  width: 100wh;
+  height: 100vh;
+}
+.hero-image {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56.25em
+}
+
+.hero-image-container {
+  animation: hero-fade-in 1s 0.5s linear forwards;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56.25em;
+  height: 26em
+}
+
+@keyframes hero-fade-in {
+  100% {
+    opacity: 1
+  }
+}
+
+.window-background {
+  animation: background-color 5s cubic-bezier(0.81,-0.46,0.19,1.33) infinite;
+  position: absolute;
+  height: 40em;
+  width: 30em;
+  top: 0
+}
+
+.screen-container {
+  animation: move-emails 5s infinite ease-out;
+  position: absolute;
+  width: 7.6em;
+  height: 6em;
+  bottom: 8.66em;
+  background: #fff url(http://www.w3cplus.com/sites/default/files/blogs/2016/1604/emails.svg) repeat-y;
+  background-size: 100% auto;
+  left: 50%;
+  transform: translate(-16.4%,-10%)
+}
+
+.notification {
+  animation: move-notification 5s infinite cubic-bezier(0.81,-0.46,0.19,1.33);
+  position: absolute;
+  bottom: 62%;
+  left: 65%;
+  width: 4%;
+  height: 3%;
+  background: #fff url(http://www.w3cplus.com/sites/default/files/blogs/2016/1604/notification.svg);
+  background-size: 100%
+}
+
+.moon {
+  animation: moon 5s infinite linear;
+  position: absolute;
+  left: 25%;
+  top: 3%;
+  background: url(http://www.w3cplus.com/sites/default/files/blogs/2016/1604/moon.svg) no-repeat;
+  background-size: 100%;
+  height: 25%;
+  width: 8%;
+  transform-origin: 30% 350%
+}
+
+@keyframes background-color {
+  0% {
+    background: #011
+  }
+
+  20%,30% {
+    background: #5ab6fc
+  }
+
+  100% {
+    background: #011
+  }
+}
+
+@keyframes move-emails {
+  0%,24% {
+    background-position: 0 -4.6em;
+    -webkit-animation-timing-function: cubic-bezier(0.81,-0.46,0.19,1.33);
+    animation-timing-function: cubic-bezier(0.81,-0.46,0.19,1.33)
+  }
+
+  34%,60% {
+    background-position: 0 0
+  }
+
+  90%,100% {
+    background-position: 0 -78%
+  }
+}
+
+@keyframes move-notification {
+  0%,20% {
+    -webkit-transform: translateX(0.25em);
+    transform: translateX(0.25em);
+    opacity: 0
+  }
+
+  50%,58% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1
+  }
+
+  70%,100% {
+    -webkit-transform: translateX(-0.25em);
+    transform: translateX(-0.25em);
+    opacity: 0
+  }
+}
+
+
+@keyframes moon {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0.25,0,0.41,1);
+    animation-timing-function: cubic-bezier(0.25,0,0.41,1)
+  }
+
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+    transform: rotateZ(-360deg);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+  }
+}
+/*end CSS animation 101 by Airen*/
+
+
+/* to center my hyperlinked buttons to my other social media*/
+div#centerDiv {
+        width: 100%;
+        text-align: center;
+        
+    }
+    ul.centerUL {
+        margin: 2px auto;
+        line-height: 1.4;
+        padding-left: 0;
+    }
+    .centerUL li {
+        display: inline;
+        text-align: center;
+    }
