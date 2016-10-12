@@ -1,3 +1,6 @@
 .nomargin{
-    margin:0px;
+    margin:0px !important;;
+}
+.h7 {
+	margin: 0px !important;
 }
