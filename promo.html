@@ -1,16 +1,135 @@
+<!-- Created by Simon Hsu-->
+
 <!doctype html>
 <html lang="en">
-<head></head>
-<title>Promo</title>
+<head>
+	<title>Promo</title>
+</head>
+<style>
+body {
+    background-image:    url(images/lakeside.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+</style>
 	<body>
 		<center>
-			<li>
-				<p>Open a <a href="https://www.tangerine.ca/en/index.html"> Tangerine account</a> for free with my my key code to get 50$ for free!!</p>
-				<p>My Orange Key is <b>47210916S1</b></p>
-			</li>
-			<li>
-				<p>Sign up for <a href="https://www.airbnb.ca/c/simonh8327">AirBnB</a> with this link to get $40 off your first trip of $95 CAD or more</p>
-			</li>
+			
+				<li>
+					<p>Open a <a href="https://www.tangerine.ca/en/index.html"> Tangerine account</a> for free with my my key code to get 50$ for free!!</p>
+					<h3>My <font color="orange">Orange</font> Key is <mark><b>47210916S1</b></mark></h3>
+				</li>
+				<li>
+					<p>Sign up for <a href="https://www.airbnb.ca/c/simonh8327">AirBnB</a> with this link to get <mark>$40 off</mark> your first trip of $95 CAD or more</p>
+				</li>
+<h1><font color="#4B9C61">Feel free to press it and check out this cool canvas I drew!</font></h1>
+<canvas id="myCanvas" width="400" height="300" style="border:1px solid black;"> </canvas>
+<input type="button" id="button" value="PRESS!">  
+<script>
+  var counter=0;
+    // tri state button
+    document.getElementById("button").addEventListener("click", function(){
+      if (counter==0) {
+        one(); 
+        counter++; 
+        }
+      else if (counter==1) {
+        two(); counter++; 
+      }
+      else {
+        clear(); counter=0; 
+      }
+    }, false);
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  function one(){
+    //draw rectangle
+
+    ctx.rect(124, 176,150, 100);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "green";
+    ctx.stroke();
+
+    //draw triangle
+    ctx.beginPath();
+    ctx.moveTo(124, 176);
+    ctx.lineTo(194, 26);
+    ctx.lineTo(274, 176);
+    ctx.closePath();
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "red";
+    ctx.stroke();  
+ 
+};
+
+  function two(){
+    //draw the sun
+        var x = (c.width / 2)+120;
+        var y = (c.height / 2)-80;
+        var radius = 50;
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#ffff80';
+        ctx.fill();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#ffff00';
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(300, 0);
+        ctx.lineTo(300, 52);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(240, 18);
+        ctx.lineTo(280, 52);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(280, 9);
+        ctx.lineTo(300, 52);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 40);
+        ctx.lineTo(280, 50);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 50);
+        ctx.lineTo(290, 60);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 60);
+        ctx.lineTo(290, 70);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(220, 68);
+        ctx.lineTo(290, 90);
+        ctx.stroke();
+        ctx.closePath();
+        
+};
+
+  function clear(){
+    ctx.clearRect(0, 0, c.width, c.height);
+  }
+
+</script>
 		</center>
 	</body>
 </html>
