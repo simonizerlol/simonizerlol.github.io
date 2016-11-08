@@ -7,7 +7,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: 400;
-  margin: 15px; 
+  margin: 15px;
   padding: 10px;
   }
 
@@ -83,7 +83,7 @@ blockquote small {
 .link
 {
    color:aqua;
-   text-decoration: none; 
+   text-decoration: none;
    background-color: white;
 }
 /*smily face*/
@@ -97,7 +97,7 @@ blockquote small {
   background-color: #FFEB97;
   border-radius: 50%;
   position: relative;
-  
+
 }
 
 .face {
@@ -407,7 +407,7 @@ html, body{
   font-size: 16px;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
   background-color: #d0d69f;
-  overflow-x:hidden; 
+  overflow-x:hidden;
 }
 
 a {
@@ -2880,11 +2880,11 @@ textarea.form-control {
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-/*  
+/*
  *
  *   SCSS by Creative Tim
  *   http://www.creative-tim.com
- *   
+ *
  */
 .datepicker {
   top: 0;
@@ -3043,7 +3043,7 @@ textarea.form-control {
 
 /*CSS Animation 101 by Airen from codeopen.io*/
 body {
-  background: #22BDA0;
+  background: #fff;
   width: 100wh;
   height: 100vh;
 }
@@ -3189,7 +3189,7 @@ body {
 div#centerDiv {
         width: 100%;
         text-align: center;
-        
+
     }
     ul.centerUL {
         margin: 2px auto;
