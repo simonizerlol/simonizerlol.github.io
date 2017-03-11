@@ -28,9 +28,8 @@ create: function() {
     this.pingpong.body.gravity.y = 1000;  
 
     // Call the 'jump' function when the spacekey is hit
-    var spaceKey = game.input.keyboard.addKey(
-                    Phaser.Keyboard.SPACEBAR);
-    spaceKey.onDown.add(this.jump, this);     
+    //var spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    game.input.onTap.add(this.jump, this);     
 
     this.cup = game.add.group(); 
 
