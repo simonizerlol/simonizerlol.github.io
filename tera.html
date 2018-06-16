@@ -3,7 +3,7 @@
 <title>Tera crafting convertor</title>
 <body>
 
-<h2>Cost Converter</h2>
+<h2>Golden Cost Converter</h2>
 <p>Type a value in the amount of golden talent field to convert the value:</p>
 
 <p>
@@ -17,7 +17,23 @@
 <p>cost to craft golden plate: <span id="goldcost2"></span></p>
 <br>
 <p>Total cost is: <span id="total"></span></p>
+  
+<h2>Silver Cost Converter</h2>
+<p>Type a value in the amount of silver talent field to convert the value:</p>
 
+<p>
+  <label>Number of silver talent:</label>
+  <input id="inputFahrenheit" type="number" placeholder="silver talent" oninput="stConverter(this.value)" onchange="gtConverter(this.value)">
+</p>
+<p>Number of silver siglo: <span id="soutput1"></span></p>
+<p>cost to craft silver siglo: <span id="scost1"></span></p>
+<br>
+<p>Number of silver plate: <span id="soutput2"></span></p>
+<p>cost to craft silver plate: <span id="scost2"></span></p>
+<br>
+<p>Total cost is: <span id="stotal"></span></p>
+
+ 
 <script>
 function gtConverter(valNum) {
   valNum = parseFloat(valNum);
@@ -27,6 +43,15 @@ function gtConverter(valNum) {
   document.getElementById("output2").innerHTML=(valNum2);
   document.getElementById("goldcost2").innerHTML=(valNum2*40*1.07);
   document.getElementById("total").innerHTML=(valNum/2*10*1.07+valNum2*40*1.07);
+}
+function stConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("soutput1").innerHTML=(valNum/2);
+  document.getElementById("scost1").innerHTML=(valNum/2*10*1.07);
+  valNum2 = valNum/4;
+  document.getElementById("soutput2").innerHTML=(valNum2);
+  document.getElementById("scost2").innerHTML=(valNum2*40*1.07);
+  document.getElementById("stotal").innerHTML=(valNum/2*10*1.07+valNum2*40*1.07);
 }
 </script>
 
