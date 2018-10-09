@@ -11,7 +11,7 @@
   z-index: 3; }
 
 .landing-section {
-  padding: 0px 0; }
+  padding: 100px 0; }
 
 .landing-section .btn-simple {
   padding: 0; }
@@ -145,3 +145,5 @@
 
 .alert h5 {
   margin-bottom: 10px; }
+
+/*# sourceMappingURL=examples.css.map */

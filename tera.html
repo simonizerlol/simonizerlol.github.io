@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Tera crafting convertor</title>
+<body>
+
+<h2>Cost Converter</h2>
+<p>Type a value in the amount of golden talent field to convert the value:</p>
+
+<p>
+  <label>Number of Golden talent:</label>
+  <input id="inputFahrenheit" type="number" placeholder="golden talent" oninput="gtConverter(this.value)" onchange="gtConverter(this.value)">
+</p>
+<p>Number of Golden daric: <span id="output1"></span></p>
+<p>cost to craft golden daric: <span id="goldcost1"></span></p>
+<br>
+<p>Number of Golden plate: <span id="output2"></span></p>
+<p>cost to craft golden plate: <span id="goldcost2"></span></p>
+<br>
+<p>Total cost is: <span id="total"></span></p>
+
+<script>
+function gtConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("output1").innerHTML=(valNum/2);
+  document.getElementById("goldcost1").innerHTML=(valNum/2*10*1.07);
+  valNum2 = valNum/4;
+  document.getElementById("output2").innerHTML=(valNum2);
+  document.getElementById("goldcost2").innerHTML=(valNum2*40*1.07);
+  document.getElementById("total").innerHTML=(valNum/2*10*1.07+valNum2*40*1.07);
+}
+</script>
+
+</body>
+</html>
